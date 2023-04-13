@@ -1,3 +1,16 @@
+# Nodeバージョン
+18.14.2
+
+# Auth0のアプリケーション作成
+Regular Web Applicationsを選択
+
+# env
+AUTH0_SECRET=
+AUTH0_BASE_URL='http://localhost:3000'
+AUTH0_ISSUER_BASE_URL='https://<テナントID>.<リージョン>.auth0.com/'
+AUTH0_CLIENT_ID=
+AUTH0_CLIENT_SECRET=
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
