@@ -3,8 +3,19 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Profile from '../../components/Profile'
+import { GetServerSideProps } from 'next'
+import { getAccessToken } from '@auth0/nextjs-auth0';
 
 const inter = Inter({ subsets: ['latin'] })
+
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const { req, res } = context;
+  const accessToken = await getAccessToken(req, res)
+  console.log({ accessToken })
+  return {
+    props: {},
+  }
+}
 
 export default function Home() {
   return (
